@@ -1,0 +1,1445 @@
+{ //以下全部出自网络和大佬资源，如有冒犯请联系删除。[所有内容仅供个人交流学习使用，请勿用于商业违法用途]
+  //公众号：『乐享汇fans』『乐享生活fans』
+  //QQ频道：『乐享汇fans』     QQ群：621886232     630383903
+  //https://gh-proxy.com/https://raw.githubusercontent.com/lxhfans/TV/master/tv.txt
+  "spider": "./lxhfans.jar",
+  "warningText": "公众号：乐享汇fans免费分享持续更新，更多详情见公众号文章",
+  "lives": [
+    {
+      "name": "直播",
+      "type": 0,
+      "url": "./live.txt",
+      "playerType": 1,
+      "header": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
+      },
+      "epg": "http://api.cntv.cn/epg/epginfo?serviceId=cbox&c={name}&d={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
+  "sites": [
+    {
+      "key": "DB",
+      "name": "🌎豆瓣|公众号：乐享汇fans免费分享持续更新，更多详情见公众号文章",
+      "type": 3,
+      "api": "./JS/drpy.min.js",
+      "ext": "./JS/豆瓣.js"
+    },
+    {
+      "key": "csp_KungFu404",
+      "name": "🎦阿狸设置",
+      "type": 3,
+      "api": "csp_KungFu404",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "jar": "http://vip.weixine.link:88/alibaba.jar"
+    },
+    {
+      "key": "TX",
+      "name": "腾腾(官)",
+      "type": 3,
+      "api": "http://vip.weixine.link:88/js/lib/drpy2.min.js",
+      "ext": "http://vip.weixine.link:88/js/tengxun.js"
+    },
+    {
+      "key": "SG",
+      "name": "狗狗(官)",
+      "type": 3,
+      "api": "http://vip.weixine.link:88/js/lib/drpy2.min.js",
+      "ext": "http://vip.weixine.link:88/js/caigou.js"
+    },
+    {
+      "key": "IQY",
+      "name": "爱爱(官)",
+      "type": 3,
+      "api": "http://vip.weixine.link:88/js/lib/drpy2.min.js",
+      "ext": "http://vip.weixine.link:88/js/aiqiyi.js"
+    },
+    {
+      "key": "YK",
+      "name": "优优(官)",
+      "type": 3,
+      "api": "http://vip.weixine.link:88/js/lib/drpy2.min.js",
+      "ext": "http://vip.weixine.link:88/js/youku.js"
+    },
+    {
+      "key": "MG",
+      "name": "果果(官)",
+      "type": 3,
+      "api": "http://vip.weixine.link:88/js/lib/drpy2.min.js",
+      "ext": "http://vip.weixine.link:88/js/mangguo.js"
+    },
+    {
+      "key": "T4_wo",
+      "name": "玩偶┃T4",
+      "type": 4,
+      "api": "http://home.jundie.top:9520/spider/csp_Wogg?sort=原画,蓝光,超清,高清&token=94fd5ab297e24a769bb762375118ec47",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "csp_WoGG",
+      "name": "玩偶┃4K",
+      "type": 3,
+      "api": "csp_WoGG",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd$$$http://www.wogg.xyz/"
+    },
+    {
+      "key": "Wobg",
+      "name": "玩偶|表哥",
+      "type": 3,
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "jar": "./jar/pg.jar",
+      "api": "csp_Wobg",
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt$$$http://wobge.run.goorm.io"
+    },
+    {
+      "key": "csp_Wo",
+      "name": "玩偶┃弹幕",
+      "type": 3,
+      "api": "csp_WoGG",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd$$$https://www.wogg.xyz/$$$弹"
+    },
+    {
+      "key": "玩偶弹幕版",
+      "name": "哥哥|弹幕",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "filter": "./JS/wogg.json",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "csp_XBPQ_6V",
+      "name": "宝宝┃4K",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./jar/vip.jar",
+      "ext": "./h/6Vip.json"
+    },
+    {
+      "key": "影巢",
+      "name": "巢巢┃4K",
+      "type": 3,
+      "api": "csp_Hdhive",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "./jar/fm.jar",
+      "ext": "http://127.0.0.1:9978/file/TVBox/jar/alitoken.txt"
+    },
+    {
+      "key": "喵喵",
+      "name": "猫猫┃4K",
+      "type": 3,
+      "api": "csp_Appto",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "jar": "./lxhfans1.jar",
+      "ext": "XRZspkas5l6NsZJWpEURh6BqKRxqCIw3QY+Bj3/9Gbahdt/I/fP2xq6LIBnrWE8xh45v/vHcmXllR1G9Po2b5t7Z8VyUowvfHsXJA/bkW7XAzegsRcxq8ZqYgUtJTGeh4UtuRrbaaKK5cL96vwgHLQ9hOn8jppN5pZgJ3ZsWQuocwI45MZOaQqi7aNyJmi0PxTt07Djk0kqVoxoHrNGjT2BH7H4K65HXLRMWhyrWswhbnSciFfwjen91iAeJaMuwqQEWSRhShJWb6WTtjXghM8JBksS0432c31evYyFEEq5yiCHTpSm35nFsLmwiI2Q0F20FTMvOA8xIKqGyazVjCVUN3gc0LDqnLWBLFdxsJHh6asndaxPCn7UitiRVuW0Ans3FzhINr5QayshrUtqJHan9h7ItRlx8XkvCh83eWkuRoGBiPC4X/mcbrawRwOM04jIRiRhJl9Dit+b5Rw35Ugvd8qzARtaLkecNFS54zX1UfVJecKBrqSyl0dx8pk2EyG1vZZ0NnnZ2JMuBvywc0gxO45mAnyMM46+igcv76u4DkqA0wFVKHtLXu5TNbOZOfLnnMChe0PdbnQva25mMHgtHYHfZbYlldh6fPdMOidoaiyg+Yd/n1xgoo16k9zclT+ioH6OBrsKG2GYlFVFxLI4bwm+v6zk237jlWXg5bj4Q="
+    },
+    {
+      "key": "Gitcafe",
+      "name": "咖咖┃4K",
+      "type": 3,
+      "api": "csp_Paper",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./HeChengChaXiu.jar",
+      "ext": "b4242bebe6f144d3aa6a2cd842ac65aa"
+    },
+    {
+      "key": "Mm",
+      "name": "毛毛┃4K",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://ys.qtw.asia/lvdou_api.php/v1.vod"
+    },
+    {
+      "key": "ML",
+      "name": "驴驴┃4K",
+      "type": 3,
+      "api": "csp_MLYS",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "https://www.maolvys.com/"
+    },
+    {
+      "key": "csp_XYQHiker_‍dyx",
+      "name": "磁磁┃4K",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./jar/spider.txt",
+      "ext": "./JS/dyg.json"
+    },
+    {
+      "key": "csp_xpath_yinfans",
+      "name": "范范┃4K",
+      "type": 3,
+      "api": "csp_XPath",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./JS/音范丝.json"
+    },
+    {
+      "key": "csp_XYQHikerlg4k",
+      "name": "云云┃4K",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./jar/spider.txt",
+      "ext": "./JS/4KHDR.json"
+    },
+    {
+      "key": "csp_XYQHiker4klg",
+      "name": "盘盘┃4K",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./jar/spider.txt",
+      "ext": "./JS/中国蓝光网.json"
+    },
+    {
+      "key": "嘉靓",
+      "name": "嘉嘉┃4K",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://api.jialiangos.com:81/api.php/app/"
+    },
+    {
+      "key": "夜猫",
+      "name": "夜夜┃4K",
+      "type": 3,
+      "api": "csp_DDMJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "playerType": 2,
+      "filterable": 1,
+      "jar": "./jar/qiaoji.jar",
+      "ext": "WEsYYDEDe6UIv+lLoR1ZFtw/KalgoC77ziQ/i1e0G5lahN54qE13n3chXS953b6h1mDPSqWgnaBubrHoosxDmwcpULYyPtPTF31PHWfgjFED47XFXittwD+aj6u7iwvDOn/F3QvmT/XzOCoa/YkFlgQyfGyxHC26vvAlZcSyiUp9RsZtlXZ9Qe3ZpLGXuJYIhroOFpm0veOnGvw4sZUKFrRNG1hxcvBIxxJj0ALpb13muDjYXHJa26n0UUaBP5/x4SZk1SdinjGsSNX3eSlUKgDRwkF3oZcEtZdTseqiMroULgJfZBFOkPhv38SPXqlxq8Ig/7rFOdntpbCeirTw+NidxizzL3pSH4LYNREEIKOzV5qILPoAUs7p7vw8Lf9POoKCXekDSMGE7+xCQyrHXYQ7Z89FW+fjkLb2PZYAmRWpSfU1aOdsgKeADNaKEOfIcRkaXzN5r+pVv+IU3NF7jOGxHBw2sGVMhYzghAX6E4gQbxxJVxjTtxWXP41mJruCTT2XhvgGesauv5DZ8ORHfMTKpdwnasnlNxojBHhGgpqEAjfsxx18njoq5L719mm+RUVtOxc7cJYqgbrQSpxAp5DHS7SRnzlqC9An/5n1Rjm/48kOoUFcOfoHsn/mYow4f8ZXI5lXsDrXnk5Zk/HQgelqhihJty1oHds/mf/1v1NU="
+    },
+    {
+      "key": "Mino",
+      "name": "诺诺┃4K",
+      "type": 3,
+      "api": "csp_AppMao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./lxhfans.jar",
+      "ext": "FbjDcUxPqpfNr0QF4QvE6sExbcpBF4MRDm4TvbCzxUxQS9bPrS+dwlqC+K21Byi2fnbN32ExknwkTyVnT4ZkO1NUAJnYhg/LOWYSnzESguc1X7n/JQ1wPh7lInAdzJ2qxzb2fKg8RZczmhg8lF/+BAMaZaqxv0MMB5dPInMBPwir"
+    },
+    {
+      "key": "艾艾",
+      "name": "艾艾┃4K",
+      "type": 3,
+      "api": "csp_Appto",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "jar": "./lxhfans1.jar",
+      "ext": "cmx8moYeCnvhEzzoIqDwiozurCMvY5XTmR+ZwTbv+7bvpEPAt2XLw0Op8RypDuoKGJLmD4myErADmLF/cx9QoQMDBTapbZxkouCm/bw+1AWuBCBnDQFCgXrw3I4lAGTaJfY0coVBSqSJ77BW5OATwkB4IfwqtWu7xXwlbEHFUsGRESh6g7VHmnFp0q4L+ohf5PkjTcyaMxjWM9FH+XOoji5ItsDhuWiFWOaRFw26Z6W8naU8v05Br77nFJteyk0MT630gW0aZEtB/J13mBmsT2tjhiuLZ+9lZq3DQk81VqABKYRXH6uauLeDBZj699Qe0A7BE+0l/tlAKV8RIvDWj6xgQeOHDZM/+D8moBHveF8j3terhJRfsAj/ukKkvdzehYA/wWrzulwpU1K4WE4OMVb/UoMiLzJijTdC1TdkmMKnXzZgKp3TJuUiPv9qi58BSRlLyY1GRHvjhBya0KEodI9QPAHqOAaW6Z2lADJc4uwImiN0UAug26SHIzWDoJ8P+0APXMA5OzqTwQ5PlGISfCChHlI4fBKRSWGiJNzVO9NxjB+9fi1d5Pp5sHegNVpuvHs3jhCg2C9Wyqwl1UA6+BxKADG2FpFHacAd1OrH7kidPzRWm8mwb202QT0+tJbtjQExHQfNuxLaZXISixJsQP7GKBBUQernokP5U1Qj2rbo="
+    },
+    {
+      "key": "皮皮虾",
+      "name": "皮皮┃4K",
+      "type": 3,
+      "api": "csp_AppSK",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "FbjPcVZY48PN/RIZ5UWFrphwLIZTGJxVRTBDqPTqg1hIUJXNp3iJg1HE6Ku0DDW8bH6VwnMqkHV3FGMiXNUxKFVOX9ue0RveKTtG0CYRkK0lRw=="
+    },
+    {
+      "key": "Juzi",
+      "name": "橘橘┃4K",
+      "type": 3,
+      "api": "csp_AppMao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "FbjDcUxPqpfNr0QF4QvE6sExbc1AGIRPUzIPtbexyEhcScOf53TW0F+D7rX5HCm9c3SL03FsmGsmXS04XZMlbxEVW4/ZgwONbnobxj8KzfJ8GvG6ETdzBCbfFw0WuoidvgjRb4EpUL8NqDk4unKXRBhjcoD99QoAIMsLc24lek3u9uBO+6JFAf41Z7sYL00hBBNM3xJsYyXCuX4BrzNYpZRwmfepqhEHQ08b/50BTD4Smp257RWMVpiQ1Tu3ht+MPo7oQAceapuyQGcL2fslXXHVrrb+9pyjtI9Qzph9HFoNJPIj5EXV+qGRI0CjSm9Dbm5nQFlZ6G2jvORw+5LMziXmuxDZH4U7qpnfjh/8hAu18546qyGmiWVI2mfDrKkVmeLq1KFA0rA="
+    },
+    {
+      "key": "BLUE",
+      "name": "蕾蕾┃4K",
+      "type": 3,
+      "api": "csp_AppMao",
+      "playerType": 2,
+      "ext": "FbjDcUxPqpfNr0QF4QvE6sExbctTA5hPEi0VqbGzxElfS8iS6G6dxFvYo6amRiS2bHOKw3Esnj46QzIsRoZ8bk4fG4OYi0iCaWwRj2ddkaM/FqHtLjQhalHiNTh6w9P3uBbzOpYja64omwk1u3D/dlZ+e5i4lng3PuAGTEUBPE34oPNY9+tFWr0Ibd9pVxAueSBD3QUsYQDulUET8DZ4nPtGpPvrhlgkKksJ9s4mWmxer4u57B2OO9qc8jua09TybbufTjMaeJGQem8U1MtbZnyk1e3UtOPZyIlX24R7PWpyLc4U0VzmkquLAB3kRiQZa1pOYUYuwm6vu/8spvSLhGbMhy+5bLc5qpPAk0mnh1ezzPQa03Cfg3JV6WGwrolC1+2steoOnaic6WQq9F2nYpq7a3QVfAbWyvIP+/mhJrtEycOuc999pfBr4Ub+yNWhIq06XaaI3EDX8h/oclhtPP9fIlIhPPNgZO/XgdX80PcGXdT2F0EtU+FJ+NoZjzcXq7OcD0dUFMudEpZ/ISVFLEQAhzFhoC3qYpmCY6xDrfjIL1W2Yh0LSk9qyfm9cw0EjDJZyt2PsVT3JxLuXjMgv0cdhPu2sTfBlL672ElQFkkjgpIL+YIQoLV69KeUYi3LYYjLFdixymHlDbdyGT19XRgwG5Z8t4e08xaRZXOd1ujQ/ZNncMJrpVQhY40mmnNcN2PHw5qapafKYcsoRMMM1d7R742jf5UE/zwNFXI+WRzxjrXerF/2fmmU0+8OGIVz9SWsllf++zV27ZOwFQ6qy07MrJ7TMEHHBrtYDaoFiOfBRLGyodnWIp1ZCPGqIxcA/5s+cdVwkd2wJdB1OKIqhz+Eg+0zmTRTFNUYUZWXvKEhDs7BuoaAQz5ArXla7xAg/F0Z1goy7k+xJZlmJlj1RJ5KdKlUvrDEQ8lCSIzPNPMz+g=="
+    },
+    {
+      "key": "ZY",
+      "name": "追追┃4K",
+      "type": 3,
+      "api": "csp_AppSK",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "FbjPcVZY48PN/RIZ5UWFrphwLIZAH4tPWnVF46Ct0RcDCdqQ/iHaxETP6KexDCalbnKb235g2zI+TmNzCM49OFRCWdee3hnULz5M1CsK3w=="
+    },
+    {
+      "key": "Yiren",
+      "name": "伊伊┃4K",
+      "type": 3,
+      "api": "csp_AppMao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "49GSQNXJ1R6WXCJZT2oeVVfj1FM6UX0CnQBodIg0neFgls8ZvVNccagbD55VUGBf9dcnzwMX+1R7mca0102wseJSe7SDvL8RgHdlfSyg5VWa+b5FViAtIauAXJYw8w+LOjr9M5GsKt9U8ylOECZpDnefOSsUmEcd/EeW25clGO0WM1jbgARPeqR7vVZBmbIwcMpwxiJ4cMXN6LVkdhBkTxH0WW6IegG3rL+OFwalSwvlQsMpm63WdfYMTvAIk8zBE/m8oxbANMxlX34P4RHgGLlBJiQTNDsK0s1pklBKVh8ZAx1vjhPQdolvweVB9iJ0j8Ja36F9+OtADh16tG4vFBAboaemQUtLmKt9sVCDxFOtKfcCtBH4xpvkWOf5+AxwOtUtMFfbmqoWs5RgwQ0tQz8DKo15Nz1g9GnD1lk9OhSMr6Uzm93jdkigANjFTuOVrfLqTQWaFY4zLWKW57nUnZ/7H3TZiF/kaLYM9kH7zxbmcKlTgUdbbqmsvVQ4UbD79Z9h598n0O2Ay14zxMFPl5xGsmCB468pghCHgoBMMgwOlFq+Pg0cF2dmG4SIa16/iqgoF67DpWpFk80sdESdruCzWODkLWIbR6ikaI7HaXdRr/mCtPwSsKbUWm2Po3tsLc9ShxkD+RtzcskvVKi+ml2tTSMEwtou2EHLmdhKLx3bKflTgbxZGA9BFAFqFdVB6ByJx/iRxh41ZB5ZQrzGoKW44RWXa5Zzd075CWZj2JuUT2/VZFsjA8lyu6T1x3HHntQgCXmDkJbYw+E+qh5mOPUw6dx+nwaaOi4gMgoPFauwGRRjkkuyiUiIRMn3REgd6Nx6cgppAjHSE1AEOQ/HJHqVGVaqf27dN7D7UKXuhpUPaB0lRTjCOsc9t8et17wliesyA1MLUEFLf9m7tq55TkiSuXyDKgyi4kWC1Yk/NlXEXQyTN8eXQhLkhrNtsSF3OroXU8OCvlaU82tn4dUKS5Y5nE0QGSP33eyIDaC/evG8wc+Q3ZfC8s5amwXMQSF0OHyjC2ErrVSi4I8tdYZgpMYgWWpdn19p9L/UD4uDAwGSfFMah9xlosmHM2KmBZYGZ86RkjVcG1bk7xM0PiLaC2mjODjTy+JdHn7WW8XDoCYHFRuhMNXUSawhoONVe+w38Pnr10UZVm778Mi2gS5691HQDE7rJ6ZFQGDcLcyq0AQxjD+RQPHKt2Pp9G5auuYs+kV59iWGWNWwD5SIYXCxcxEIIabuXMlBlz1XNxUN0GjNC0C3LGFCEYobeGTwaOuDbL24qULqiarsyx7U99CEJ4mJ4pThdFBT7Lia+JK3JUuOI7Mm0PpYkYjbRMk9QgiNH+rRfFCYRAKMZ+M64G07DTL5KN1GOADVyqPFB/3vwSbeEAzB+4Q6PKgsKtL1hpnMo/SUYAa6Hf3p5cqtMJnVuUBV3Vz6NAgK+dHpzYrtQBfbHN6n3eG393aBeq8EK9QsK7cs4YtO5ofBzI5QlhWZ7LMbBlcWvgnb9BJwsc3YmPuFDKGORMU+epQ7BK1bqkcFPOFLvMSSRuhrbsRZSytAB0vEuMtznsoOd3o6qDs0jtgLyb2quBMxrVIGie+pxc/j8saZKCap+uIWn/kouVBfdw80oq1YNjNU+GAU7CgHhapkER7d2AcmyWZFb9k+qwtQn79q9k9gVg6qkQb+XTZ6TpgZFC6HwJFaYkxGfO8P5HcC3L8IDaHsxsSrBLk0GiWE4Oj3s3fjzJCbqwjjixrJhN8SuviRz6sLkCMqZdqukqXiSdqoyh5tK9jFm06uvkMAcMEwfikVDOwKvgzLyxPFXLbI1ZfqOQoHO3r+wqw7HUnpIe48SIRmRR8LHeS22IsWaKsBmg9iSQHSlJHimsgUl7Tl8Go11ftgiT6oCXq2s5Ep7sH/Qpr01R2L48xopN3HaaDkzOLXNYJohT7NsaEm7w=="
+    },
+    {
+      "key": "TOTO",
+      "name": "图图┃4K",
+      "type": 3,
+      "api": "csp_APPTT",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./lxhfans1.jar",
+      "ext": "pcnBMY0w5bjNJRkh0anpQKnw2cE1NY1RjR2JBTDVFUGxkTW1FZXdhUkhiVlVzanpQKnxodHRwOi8vMTE5LjEwMS4xNDguMTI1OjU1NjYv"
+    },
+    {
+      "key": "YT",
+      "name": "影影┃4K",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://ytcms.lyyytv.cn/api.php/app/"
+    },
+    {
+      "key": "探探",
+      "name": "探探┃4K",
+      "type": 3,
+      "playerType": "1",
+      "api": "csp_YTVIP",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "timeout": 30,
+      "ext": "vip.lyyytv.cn"
+    },
+
+#云盘搜索
+
+  
+  {
+      "key": "YiSo",
+      "name": "🦊易搜┃🍭",
+      "type": 3,
+      "api": "csp_YiSo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd"
+    },
+    {
+      "key": "Zhaozy",
+      "name": "🦊资源┃🍭",
+      "type": 3,
+      "api": "csp_Zhaozy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd$$$yannanfei$$$abcdefg"
+    },
+    {
+      "key": "PanSou",
+      "name": "🦊盘搜┃🍭",
+      "type": 3,
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd"
+    },
+    {
+      "key": "UpYun",
+      "name": "🦊云搜┃🍭",
+      "type": 3,
+      "api": "csp_UpYun",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd"
+    },
+    {
+      "key": "PanSearch",
+      "name": "🦊盘Se┃🍭",
+      "type": 3,
+      "api": "csp_PanSearch",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd"
+    },
+    {
+      "key": "qiye",
+      "name": "🦊七夜┃🍭",
+      "type": 3,
+      "api": "csp_Dovx",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt+4k|auto|fhd"
+    },
+    {
+      "key": "Gitcafee",
+      "name": "📀纸条┃🍭",
+      "type": 3,
+      "jar": "./jar/xyq.jar",
+      "api": "csp_Gitcafe",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt"
+    },
+    {
+      "key": "csp_Zhaozy",
+      "name": "📀资源┃🍭",
+      "type": 3,
+      "jar": "./jar/xyq.jar",
+      "api": "csp_Zhaozy",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt"
+    },
+    {
+      "key": "csp_AliPS",
+      "name": "📀盘搜┃🍭",
+      "type": 3,
+      "jar": "./jar/xyq.jar",
+      "api": "csp_AliPS",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt"
+    },
+    {
+      "key": "csp_Yisou",
+      "name": "📀易搜┃🍭",
+      "type": 3,
+      "jar": "./jar/xyq.jar",
+      "api": "csp_Yisou",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt"
+    },
+    {
+      "key": "csp_Upyunso",
+      "name": "📀云搜┃🍭",
+      "type": 3,
+      "jar": "./jar/xyq.jar",
+      "api": "csp_Upyunso",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt"
+    },
+    {
+      "key": "纸条弹幕版",
+      "name": "纸条弹幕┃🍭",
+      "type": 3,
+      "api": "csp_XiaoZhiTiao",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "盘Se弹幕版",
+      "name": "盘S弹幕┃🍭",
+      "type": 3,
+      "api": "csp_PanSearch",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "找资源弹幕版",
+      "name": "资源弹幕┃🍭",
+      "type": 3,
+      "api": "csp_Zhaozy",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "username": "zhaoziyuannb",
+        "password": "zhaoziyuannb",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "七夜弹幕版",
+      "name": "七夜弹幕┃🍭",
+      "type": 3,
+      "api": "csp_Dovx",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "盘搜弹幕版",
+      "name": "盘搜弹幕┃🍭",
+      "type": 3,
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "易搜弹幕版",
+      "name": "易搜弹幕┃🍭",
+      "type": 3,
+      "api": "csp_YiSo",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+        "danmu": true
+      },
+      "jar": "./jar/danmu.jar"
+    },
+    {
+      "key": "小纸条_cli",
+      "name": "小纸条┃🍭",
+      "type": 4,
+      "api": "http://home.jundie.top:9520/spider/cli_gitCafe",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://127.0.0.1:9978/file/乐享TV/阿狸/token.txt",
+      "timeout": 30
+    },
+    {
+      "key": "gitcafe_php",
+      "name": "小纸条PHP┃🍭",
+      "type": 1,
+      "api": "http://tvbox.top/gitcafe.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "LR",
+      "name": "🌎关注公众号：乐享汇fans",
+      "type": 3,
+      "api": "csp_KungFu404",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "jar": "https://weixine.net/alibaba.jar"
+    }
+  ],
+  "parses": [
+    {
+      "name": "解析聚合",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Json轮询",
+      "type": 2,
+      "url": "Sequence"
+    },
+    {
+      "name": "乐乐",
+      "type": 1,
+      "url": "http://42.157.129.144:2323/CH/caihong_1993138546.php?url="
+    },
+    {
+      "name": "毛毛",
+      "type": 1,
+      "url": "http://jx.daenys.vip:2587/tjxdsg.php?url="
+    },
+    {
+      "name": "奇奇",
+      "type": 1,
+      "url": "https://jx.xn--2qux23cmstnvb.com/api/?key=kqbMl0BF9i7sdLCKtr&url="
+    },
+    {
+      "name": "毛毛2",
+      "type": 1,
+      "url": "http://jx.wogg.link:63/jiexi/饭特析.php?url="
+    },
+    {
+      "name": "奇奇2",
+      "type": 1,
+      "url": "https://api.tyun77.cn/api.php/provide/parseDicturl?url="
+    },
+    {
+      "name": "世世",
+      "type": 1,
+      "url": "http://175.178.183.192:84/api/?key=f3913eb3f85a8298b3e6e427b8712b2e&url="
+    },
+    {
+      "name": "追追",
+      "type": 1,
+      "url": "http://115.231.220.36:9999/jx/tvbox/zytv.php?url="
+    },
+    {
+      "name": "酷酷",
+      "type": 1,
+      "url": "http://jx.realdou.cn/api/?key=FfeBSwPEyz1MBrTCvd&url="
+    },
+    {
+      "name": "圈圈",
+      "type": 1,
+      "url": "http://111.173.118.253:9898/api/xg/?key=9ZPXS98JzGPRQeN1s6&url="
+    },
+    {
+      "name": "叉叉",
+      "type": 1,
+      "url": "http://cache.json.icu/1804857380.php?url="
+    },
+    {
+      "name": "巧巧",
+      "type": 1,
+      "url": "http://pandown.pro/app/kkdy.php?url="
+    },
+    {
+      "name": "妙妙",
+      "type": 1,
+      "url": "http://119.91.123.253:1234/Api/cs.php?url="
+    },
+    {
+      "name": "妙妙2",
+      "type": 1,
+      "url": "https://www.qiaoji8.com/tvbox/json.php?url="
+    },
+    {
+      "name": "圈圈2",
+      "type": 1,
+      "url": "http://pandown.pro/app/lvdou.php?url="
+    },
+    {
+      "name": "海滩",
+      "type": 0,
+      "url": "https://okjx.cc/?url="
+    },
+    {
+      "name": "海棠",
+      "type": 0,
+      "url": "https://jx.yangtu.top/?url="
+    },
+    {
+      "name": "玉米",
+      "type": 1,
+      "url": "http://61.147.93.21:8090/index.php?url="
+    },
+    {
+      "name": "曲奇",
+      "type": 0,
+      "url": "https://jx.777jiexi.com/player/?url="
+    },
+    {
+      "name": "宇宙",
+      "type": 0,
+      "url": "https://jx.jsonplayer.com/player/?url="
+    },
+    {
+      "name": "光速",
+      "type": 0,
+      "url": "https://www.gszyv.com/m3u8/?url="
+    },
+    {
+      "name": "量子",
+      "type": 0,
+      "url": "https://lziplayer.com/?url="
+    },
+    {
+      "name": "公众号",
+      "type": 1,
+      "url": "http://175.178.183.192:86/api/?key=b832096861839f56066bf4ae7a0d7be0&url="
+    },
+    {
+      "name": "乐享汇fans",
+      "type": 0,
+      "url": "https://jx.xmflv.com/?url="
+    },
+    {
+      "name": "最优",
+      "type": 1,
+      "url": "http://110.42.2.247:880/analysis/json/?uid=2449&my=acfgikquvzFGJRW459&url="
+    },
+    {
+      "name": "优爱腾",
+      "type": 0,
+      "url": "https://jx.jsonplayer.com/player/?url=",
+      "ext": {
+        "flag": [
+          "youku",
+          "YouKu",
+          "优酷",
+          "优酷视频",
+          "iqiyi",
+          "IQiYi",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "奇艺视频",
+          "qq",
+          "腾讯",
+          "企鹅",
+          "腾讯视频",
+          "bilibili",
+          "哔哩",
+          "哔哩哔哩",
+          "letv",
+          "leshi",
+          "LS",
+          "乐视视频",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "SoHu",
+          "搜狐",
+          "搜狐视频"
+        ]
+      }
+    },
+    {
+      "name": "m3u8",
+      "type": 0,
+      "url": "https://jx.m3u8.tv/jiexi/?url="
+    },
+    {
+      "name": "解析1",
+      "type": 1,
+      "url": "http://27.124.4.42:4567/jhjson/ceshi.php?url="
+    },
+    {
+      "name": "芒果",
+      "type": 1,
+      "url": "https://jx.255tv.tk/api/?key=S6kQHaE1gVEY5KAv8L&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "letv",
+          "乐视",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.1.0"
+        }
+      }
+    },
+    {
+      "name": "优酷",
+      "type": 0,
+      "url": "https://yun.ckmov.com/?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "letv",
+          "乐视",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.1.0"
+        }
+      }
+    },
+    {
+      "name": "360",
+      "type": 1,
+      "url": "https://vip.mosangkeji.com/api/?key=rRNvXAnOghBBLnC35c&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "企鹅",
+          "IQiYi",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "YouKu",
+          "优酷",
+          "sohu",
+          "SoHu",
+          "搜狐",
+          "letv",
+          "LeShi",
+          "乐视",
+          "imgo",
+          "mgtv",
+          "MangGuo",
+          "芒果",
+          "SLYS4k",
+          "BYGA",
+          "luanzi",
+          "AliS",
+          "dxzy",
+          "bilibili",
+          "QEYSS",
+          "xigua",
+          "西瓜视频",
+          "腾讯视频",
+          "奇艺视频",
+          "优酷视频",
+          "芒果视频",
+          "乐视视频"
+        ]
+      }
+    },
+    {
+      "name": "搜狗",
+      "type": 1,
+      "url": "https://www.alyzy.xyz/api/?key=KiK9W5QalBfNDEgUDs&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "letv",
+          "乐视",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.1.0"
+        }
+      }
+    },
+    {
+      "name": "小影视",
+      "type": 0,
+      "url": "https://bv.htoo.vip/?url="
+    },
+    {
+      "name": "小城解析",
+      "type": 1,
+      "url": "https://jx.ccabc.cc/xc/?key=5567332json&url="
+    },
+    {
+      "name": "星辰云解析",
+      "type": 1,
+      "url": "https://json.key521.cn/api/?key=df27d9ca9ec97e22c47f8565a50aa6f5&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "企鹅",
+          "IQiYi",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "YouKu",
+          "优酷",
+          "sohu",
+          "SoHu",
+          "搜狐",
+          "letv",
+          "LeShi",
+          "乐视",
+          "imgo",
+          "mgtv",
+          "MangGuo",
+          "芒果",
+          "SLYS4k",
+          "BYGA",
+          "luanzi",
+          "AliS",
+          "dxzy",
+          "bilibili",
+          "QEYSS",
+          "xigua",
+          "西瓜视频",
+          "腾讯视频",
+          "奇艺视频",
+          "优酷视频",
+          "芒果视频",
+          "乐视视频"
+        ]
+      }
+    },
+    {
+      "name": "小新解析",
+      "type": 1,
+      "url": "http://xiaoxin.1080p.me/api/?key=368b2df76af1b58d897bbe31a00180c0&url="
+    },
+    {
+      "name": "看看",
+      "type": 0,
+      "url": "https://www.kankanju.cc/f/jxplayer.php?v=",
+      "flag": [
+        "Feiyun-",
+        "mgtv",
+        "芒果"
+      ]
+    },
+    {
+      "name": "毛三",
+      "type": 1,
+      "url": "https://vip.mosangkeji.com/api/?key=PLvqEH5S4OsBrVdzv6&url=",
+      "header": {
+        "User-Agent": "Dart/2.18 (dart:io)"
+      },
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "youku",
+          "hulihuli",
+          "hulihuli-",
+          "优酷"
+        ]
+      }
+    },
+    {
+      "name": "777",
+      "type": 0,
+      "url": "https://jx.777jiexi.com/player/?url="
+    },
+    {
+      "name": "布雷/芒",
+      "type": 0,
+      "url": "https://jx.jsonplayer.com/player/?url=",
+      "ext": {
+        "flag": [
+          "qiyi",
+          "iqiyi",
+          "爱奇艺",
+          "奇艺",
+          "pptv",
+          "PPTV",
+          "letv",
+          "乐视",
+          "leshi",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩",
+          "mgtv",
+          "芒果",
+          "sohu",
+          "搜狐",
+          "xigua",
+          "fun",
+          "leshi",
+          "风行"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.1.0"
+        }
+      }
+    },
+    {
+      "name": "芒高/奇异1",
+      "type": 0,
+      "url": "https://jx.bozrc.com:4433/player/?url=",
+      "ext": {
+        "flag": [
+          "qiyi",
+          "iqiyi",
+          "爱奇艺",
+          "奇艺",
+          "pptv",
+          "PPTV",
+          "letv",
+          "乐视",
+          "leshi",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩",
+          "mgtv",
+          "imgo",
+          "芒果",
+          "sohu",
+          "搜狐",
+          "xigua",
+          "fun",
+          "leshi",
+          "风行"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.1.0"
+        }
+      }
+    },
+    {
+      "name": "芒高/奇异2",
+      "type": 0,
+      "url": "https://jx.zhanlangbu.com/?url=",
+      "ext": {
+        "flag": [
+          "qiyi",
+          "iqiyi",
+          "爱奇艺",
+          "奇艺",
+          "pptv",
+          "PPTV",
+          "letv",
+          "乐视",
+          "leshi",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩",
+          "mgtv",
+          "imgo",
+          "芒果",
+          "sohu",
+          "搜狐",
+          "xigua",
+          "fun",
+          "leshi",
+          "风行"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.1.0"
+        }
+      }
+    },
+    {
+      "name": "8old",
+      "type": 0,
+      "url": "https://www.m3u8.tv.cdn.8old.cn/jx.php?url=",
+      "ext": {
+        "flag": [
+          "360",
+          "qq",
+          "腾讯",
+          "qiyi",
+          "iqiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "letv",
+          "乐视",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩"
+        ]
+      }
+    }
+  ],
+  "flags": [
+    "youku",
+    "qq",
+    "QQ",
+    "iqiyi",
+    "qiqi",
+    "qiyi",
+    "letv",
+    "sohu",
+    "tudou",
+    "pptv",
+    "PPTV",
+    "mgtv",
+    "ltnb",
+    "rx",
+    "SLYS4k",
+    "FEI",
+    "XAL",
+    "QEYSS",
+    "aliyun",
+    "AliS",
+    "ddzy",
+    "kuying-zj",
+    "xfyun",
+    "wuduzy",
+    "wasu",
+    "bilibili",
+    "renrenmi",
+    "haiwaikan",
+    "cool",
+    "tnmb",
+    "xigua",
+    "m1905",
+    "funshion",
+    "imgo",
+    "ruyi1080",
+    "ruyib1080",
+    "juquan4k",
+    "tucheng",
+    "yzm",
+    "seven",
+    "caihong",
+    "YuMi-vip"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-accurate-seek",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000000"
+        }
+      ]
+    },
+    {
+      "group": "硬解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-accurate-seek",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000000"
+        }
+      ]
+    }
+  ],
+  "doh": [
+    {
+      "name": "Google",
+      "url": "https://dns.google/dns-query",
+      "ips": [
+        "8.8.4.4",
+        "8.8.8.8"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ]
+    },
+    {
+      "name": "AdGuard",
+      "url": "https://dns.adguard.com/dns-query",
+      "ips": [
+        "94.140.14.140",
+        "94.140.14.141"
+      ]
+    },
+    {
+      "name": "DNSWatch",
+      "url": "https://resolver2.dns.watch/dns-query",
+      "ips": [
+        "84.200.69.80",
+        "84.200.70.40"
+      ]
+    },
+    {
+      "name": "Quad9",
+      "url": "https://dns.quad9.net/dns-quer",
+      "ips": [
+        "9.9.9.9",
+        "149.112.112.112"
+      ]
+    }
+  ],
+  "ads": [
+    "mimg.0c1q0l.cn",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "mc.usihnbcq.cn",
+    "mg.g1mm3d.cn",
+    "mscs.svaeuzh.cn",
+    "cnzz.hhttm.top",
+    "tp.vinuxhome.com",
+    "cnzz.mmstat.com",
+    "www.baihuillq.com",
+    "s23.cnzz.com",
+    "z3.cnzz.com",
+    "c.cnzz.com",
+    "stj.v1vo.top",
+    "z12.cnzz.com",
+    "img.mosflower.cn",
+    "tips.gamevvip.com",
+    "ehwe.yhdtns.com",
+    "xdn.cqqc3.com",
+    "www.jixunkyy.cn",
+    "sp.chemacid.cn",
+    "hm.baidu.com",
+    "s9.cnzz.com",
+    "z6.cnzz.com",
+    "um.cavuc.com",
+    "mav.mavuz.com",
+    "wofwk.aoidf3.com",
+    "z5.cnzz.com",
+    "xc.hubeijieshikj.cn",
+    "tj.tianwenhu.com",
+    "xg.gars57.cn",
+    "k.jinxiuzhilv.com",
+    "cdn.bootcss.com",
+    "ppl.xunzhuo123.com",
+    "xomk.jiangjunmh.top",
+    "img.xunzhuo123.com",
+    "z1.cnzz.com",
+    "s13.cnzz.com",
+    "xg.huataisangao.cn",
+    "z7.cnzz.com",
+    "xg.huataisangao.cn",
+    "z2.cnzz.com",
+    "s96.cnzz.com",
+    "q11.cnzz.com",
+    "thy.dacedsfa.cn",
+    "xg.whsbpw.cn",
+    "s19.cnzz.com",
+    "z8.cnzz.com",
+    "s4.cnzz.com",
+    "f5w.as12df.top",
+    "ae01.alicdn.com",
+    "www.92424.cn",
+    "k.wudejia.com",
+    "vivovip.mmszxc.top",
+    "qiu.xixiqiu.com",
+    "cdnjs.hnfenxun.com",
+    "cms.qdwght.com",
+    "https://lf1-cdn-tos.bytegoofy.com/obj/tos-cn-i-dy/455ccf9e8ae744378118e4bd289288dd"
+  ]
+}
